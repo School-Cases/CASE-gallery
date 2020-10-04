@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+main>header {
+    padding: 2.14em;
+    text-align: center;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+main header h1 {
+    margin: 0;
+}
+
+main header h1,
+main header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+main header a {
+    color: rgb(150, 150, 150);
+}
+
+main header a:hover {
+    text-decoration: underline;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+}
+
+main section .card {
+    height: 80vh;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    width: calc(100% - 10px * 2);
+}
+
+main section .card .body {
+    flex-grow: 1;
+}
+
+main section .card .body .meta {
+    padding: .66em;
+}
+
+main section .card .body .meta img {
+    width: 12px;
+    height: 12px;
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+main section .card .body .meta img:hover {
+    opacity: .4;
+    cursor: pointer;
+}
+
+main section .card .body p {
+    margin: 0;
+    padding: .66em;
+    color: gray;
+}
+
+main section .card figure {
+    height: 80%;
+    width: 100%;
+    margin: 0;
+}
+
+main section .card figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 700px) {
+    main section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1em;
+    }
+
+    main section .card {
+        width: calc(50% - 10px * 2);
+        margin: 5px 10px;
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 945px) {
+    main section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1em;
+    }
+
+    main section .card {
+        margin: 10px;
+        width: calc(33% - 10px * 2);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main section .card {
+        height: 33vh;
+        margin: 35px;
+        width: calc(33% - 35px * 2);
+    }
+}
