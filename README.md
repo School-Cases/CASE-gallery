@@ -6,7 +6,7 @@ En samlingsida för galleri sidor gjorda av deltagare från Glimåkra Webbutveck
 
 1. Gör en mapp i `galleries` med ditt namn t.ex `galleries/henry`
 2. Skapa  `galleries/<DITT-NAMN>/index.html` för html-koden och `galleries/<DITT-NAMN>/style.css` för css-koden. Vill ni ha bilder i repot kan ni också skapa mappen `galleries/<DITT-NAMN>/assets` också och lägga dem där. (annars kan ni länka dem från nätet direkt).
-3. Utforma galleriet enligt wireframes nedan. Notera att ni behöver använda media queries hantera olika vyer.
+3. Utforma galleriet enligt wireframes nedan. Notera att ska använda media queries för att hantera olika vyer.
 
 ## Mobil vy
 
