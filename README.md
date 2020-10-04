@@ -26,4 +26,4 @@ En samlingsida för galleri sidor gjorda av deltagare från Glimåkra Webbutveck
 
 ## Övrigt
 Om ni lägger in bilder i repot tänk på att inte ladda in för stora bilder. Under 5MB är lugnt. 
-Noter att Github har precis ändrat sin default huvudbranch från `master` till `main`.
+Notera också att Github har precis ändrat sin default huvudbranch från `master` till `main`.
