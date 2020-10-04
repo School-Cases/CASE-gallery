@@ -14,7 +14,7 @@ En samlingsida för galleri sidor gjorda av deltagare från Glimåkra Webbutveck
 
 ## Desktop/tablet vy
 
-![](./assets/desktop-tabel-view.png)
+![](./assets/desktop-tablet-view.png)
 
 ## Krav
 
