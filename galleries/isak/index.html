@@ -16,67 +16,21 @@
             <span class="filler"></span>
         </header>
         
-        <section>
-            <div class="card">
+        <section id="app">
+            <div class="card" v-for="(post, index) in posts" :key="index">
                 <figure>
-                    <img src="./assets/donuts.jpg" alt="">
+                    <img v-bind:src="post.imageUrl" alt="">
                 </figure>
                 <div class="body">
                     <div class="meta">
-                        <img src="./assets/heart.png" alt="">
-                        <span>123 likes</span>
-                    </div>
-                    
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores tempora sapiente quas saepe aspernatur repellat reiciendis accusamus magni natus quidem obcaecati ad sint cum consequuntur, voluptatem architecto aliquam quasi aperiam?</p>
-                </div>
-            </div>
-            <div class="card">
-                <figure>
-                    <img src="./assets/cake.jpg" alt="">
-                </figure>
-                <div class="body">
-                    <div class="meta">
-                        <img src="./assets/heart.png" alt="">
-                        <span>212 likes</span>
-                    </div>
-                    
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores tempora sapiente quas saepe aspernatur repellat reiciendis accusamus magni natus quidem obcaecati ad sint cum consequuntur, voluptatem architecto aliquam quasi aperiam?</p>
-                </div>
-            </div>
-            <div class="card">
-                <figure>
-                    <img src="./assets/kanelbullar.jpg" alt="">
-                </figure>
-                <div class="body">
-                    <div class="meta">
-                        <img src="./assets/heart.png" alt="">
-                        <span>76 likes</span>
-                    </div>
-                    
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores tempora sapiente quas saepe aspernatur repellat reiciendis accusamus magni natus quidem obcaecati ad sint cum consequuntur, voluptatem architecto aliquam quasi aperiam?</p>
-                </div>
-            </div>
-            <div class="card">
-                <figure>
-                    <img src="./assets/croissant.jpeg" alt="">
-                </figure>
-                <div class="body">
-                    <div class="meta">
-                        <img src="./assets/heart.png" alt="">
-                        <span>42 likes</span>
-                    </div>
-                    
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores tempora sapiente quas saepe aspernatur repellat reiciendis accusamus magni natus quidem obcaecati ad sint cum consequuntur, voluptatem architecto aliquam quasi aperiam?</p>
-                </div>
-            </div>
-            <div class="card">
-                <figure>
-                    <img src="./assets/bondkaka.jpg" alt="">
-                </figure>
-                <div class="body">
-                    <div class="meta">
-                        <img src="./assets/heart.png" alt="">
-                        <span>4 likes</span>
+                        <div>
+                            <img class="like-btn" src="./assets/heart.png" alt="">
+                            <span>123 likes</span>
+                        </div>
+                        <div>
+                            <span>2020/03/21</span>
+                            <img src="./assets/calendar.png" alt="">
+                        </div>
                     </div>
                     
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores tempora sapiente quas saepe aspernatur repellat reiciendis accusamus magni natus quidem obcaecati ad sint cum consequuntur, voluptatem architecto aliquam quasi aperiam?</p>
@@ -85,6 +39,8 @@
         </section>
 
     </main>
-</body>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./main.js"></script>
+</body>
 </html>
