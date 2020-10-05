@@ -4,7 +4,48 @@
 }
 
 body {
+    background-color: aqua;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    background-color: cadetblue;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    
+}
+
+.icon {
+    width: 1.3rem;
+}
+
+.like {
+    align-self: flex-start;
+    padding: 1rem 0 0 0;
+    display: flex;
+}
+
+.likes::before {
+    content: '123 ';
+}
+
+.description {
+    align-self: flex-start;
+    padding: 1rem 0 2rem;
 }
