@@ -17,14 +17,14 @@ main {
     height: 100%;
 }
 
-main>header {
+main > header {
     padding: 2.14em;
     text-align: center;
-    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
 }
 
 main header h1 {
@@ -68,6 +68,9 @@ main section .card .body {
 
 main section .card .body .meta {
     padding: .66em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 main section .card .body .meta img {
@@ -78,7 +81,7 @@ main section .card .body .meta img {
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-main section .card .body .meta img:hover {
+main section .card .body .meta .like-btn:hover {
     opacity: .4;
     cursor: pointer;
 }
@@ -131,7 +134,7 @@ main section .card figure img {
 @media only screen and (min-width: 1200px) {
     main section .card {
         height: 33vh;
-        margin: 35px;
-        width: calc(33% - 35px * 2);
+        margin: 15px;
+        width: calc(25% - 15px * 2);
     }
 }
