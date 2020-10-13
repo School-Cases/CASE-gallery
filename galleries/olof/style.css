@@ -4,7 +4,9 @@ body {
     width: 100%;
     height: 100%;
 }
-
+header {
+    text-align: center;
+}
 .container {
     width: 100vw;
     height: 100vh;
@@ -62,16 +64,16 @@ a:hover {
 .date {
     color: rgba(0, 0, 0, 0.6);
 }
-.like1 {
+.likebox {
     display: flex;
     flex-flow: row;
 }
-.like2:hover {
+.heart:hover {
     color: red;
     cursor: pointer;
     opacity: .4;
 }
-.like2 {
+.heart {
     margin-right: 3px;
     color: red;
 }
@@ -82,9 +84,6 @@ a:hover {
 .bolltext {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-}
-.mainall {
-    margin-bottom: 10px;
 }
 img {
     border-bottom: 2px solid black;
