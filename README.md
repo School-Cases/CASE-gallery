@@ -23,3 +23,5 @@ Krav:
 * `./index.html` ska ha en länk till galleriet och författarnamn.
 * Minst 7 bilder ska finnas i galleriet.
 * Alla id selectors ska motiveras med en kommentar. _Ledtråd: id ska inte behövas._
+---
+Note: My first time using media queries.
